@@ -33,8 +33,9 @@ makeCacheMatrix <- function(x = matrix()) {
 ####    cacheSolve takes the list returned by makeCacheMatrix, checks to see if the inverse of the
 ####    matrix it contains has been solved. If it has already been solved, it returns the inverse
 ####    of the matrix already cached. If it has not been solved, the cached matrix is obtained
-####    using the makeCacheMatrix get function, the inverse of this matrix is computed, and 
-####    the setinv function is used to assign the value of of the inverse of the matrix. 
+####    using the makeCacheMatrix get function, the inverse of this matrix is computed, 
+####    the setinv function is used to assign the value of of the inverse of the matrix, and
+####    the inverse of the matrix is returned.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
